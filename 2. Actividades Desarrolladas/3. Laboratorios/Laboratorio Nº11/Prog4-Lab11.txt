@@ -1,0 +1,112 @@
+Nombre: Alexander Zhuo
+Cédula: 8-965-959
+Materia: Programación IV
+Laboratorio 11
+
+Preguntas:
+Clases y Objetos
+
+Define una clase y un objeto en tus propias palabras.
+*Clase: Es la plantilla que definimos un conjunto de propiedades y métodos
+que son comunes a todos los objetos de ese tipo, por ejemplo, un plano para construir un objeto
+*Objeto: Es una instancia de una clase, es decir, es una entiedad concreta que tiene las propiedades
+y puede realuzar las acciones definidas en la clase.
+
+
+¿Qué propiedades y métodos tenía la clase Coche que creaste?
+*Propiedades
+'color'
+'marca'
+
+*Métodos
+'__construct($color, $marca)'
+'__destruct()'
+'arrancar()'
+'detener()'
+
+¿Cómo se crea un objeto en PHP? Proporciona un ejemplo.
+*Primero se debe definir una clase y luego utilizar el operado "new" para instanciar el objeto de esa clase
+
+Describe un ejemplo de la vida real que podría ser representado por una clase y un objeto en programación.
+Ejemplo de la vida real:
+
+Definimos una clase llamada 'persona'
+Clase 'persona'
+*Propiedades: 'nombre', 'edad', 'genero'
+*Métodos: 'hablar'(), 'caminar()', 'trabajar()'
+
+Objeto: Una instancia de la clase 'persona' podría ser una persona específica, como 'Juan',
+con nombre "Juan", edad 30 y género "Masculino". Juan podía ser realizar acciones cocmo hablar, caminar
+y trabajar.
+
+Herencia
+¿Qué es la herencia en la programación orientada a objetos?
+La herencia des un principio de la programcion orientada a objetos que permite crear una nueva
+clase basándose en una clase existente. La nueva clase(subclase) hereda las propiedades y métodos
+de la clase existente(superclase), y puede añadir sus propias propiedades y métodos o sobreescribir
+los heredados.
+
+¿Qué clase creó la clase CocheDeportivo y qué propiedades y métodos heredó de la clase Coche?
+La clase 'CocheDeportivo' hereda de la clase 'coche'
+*Propiedades Heredadas: 'color', 'marca'
+*Métodos Heredados: 'arranca()', 'detener()'
+
+Explica cómo la clase CocheDeportivo añadió funcionalidad adicional a la clase Coche.
+La clase CocheDeportivo añadió el método turbo(), que no estaba presente en la clase 'Coche',
+este método específico permite activar el turbo del coche deportivo, añadiendo así funcionalidad adicional.
+
+Proporciona un ejemplo de herencia en un contexto diferente al del coche (por ejemplo, animales, dispositivos electrónicos, etc.).
+Ejemplo: Animales
+
+Clase Animal
+*Propiedades: 'nombre', 'edad'
+*Métodos: 'comer()', 'dormir()'.
+*Clase 'Perro' que hereda de 'Animal'
+*Métodos Adicionales: ladrar()
+
+Polimorfismo
+Define polimorfismo en el contexto de la programación orientada a objetos.
+El polimorfismo es la capacidad de diferentes clases de responder a la misma interfaz,
+permite que un método en diferentes clases realice acciones diferentes según la clase 
+en la que se implemente.
+
+¿Cómo demostraste el polimorfismo en la clase Coche y CocheDeportivo?
+Encapsulamiento
+Se demostró el polimorfismo mediante la implementación del método descripcion() en ambas clases. 
+Aunque ambos métodos tienen el mismo nombre, la implementación y el comportamiento específico 
+dependen de la clase en la que se encuentran.
+
+Explica qué es el encapsulamiento y por qué es importante en la programación orientada a objetos.
+El encapsulamiento es la práctica de restringir el acceso directo a las propiedades de un objeto y 
+permitir el acceso a través de métodos públicos. Esto es importante porque protege los datos internos del objeto 
+y asegura que solo se modifiquen de manera controlada y segura.
+
+¿Cómo protegiste las propiedades color y marca en la clase Coche?
+Se protegieron las propiedades color y marca haciéndolas privadas (private)
+
+¿Qué son los métodos getter y setter y cómo se usan?
+Los métodos getter y setter son métodos públicos que se utilizan para acceder y modificar las propiedades privadas de una clase.
+*Getter: Un método que devuelve el valor de una propiedad privada.
+*Setter: Un método que establece el valor de una propiedad privada.
+
+Abstracción
+Define abstracción en tus propias palabras.
+Se refiere a la creación de interfaces y clases abstractas que definen comportamientos 
+comunes sin especificar los detalles de implementación.
+
+¿Qué es una clase abstracta y cómo se utilizó en el archivo 05_abstraccion.php?
+Constructores y Destructores
+Una clase abstracta es una clase que no se puede instanciar y que puede contener métodos abstractos. 
+Los métodos abstractos no tienen implementación en la clase abstracta y 
+deben ser implementados por las clases que heredan de ella.
+
+¿Qué es un constructor y cuándo se utiliza?
+Un constructor es un método especial que se llama automáticamente cuando se crea una instancia de una clase. 
+Se utiliza para inicializar las propiedades del objeto y realizar cualquier configuración inicial.
+
+¿Cómo inicializaste las propiedades color y marca en el constructor de la clase Coche?
+Inicialicé las propiedades color y marca dentro del método __construct pasando los valores como parámetros y asignándolos a las propiedades de la clase.
+
+¿Qué es un destructor y cuándo se ejecuta?
+Un destructor es un método especial que se llama automáticamente cuando un objeto está a punto de ser destruido o el script termina. 
+Se utiliza para realizar tareas de limpieza, como liberar recursos o mostrar mensajes.
